@@ -22,6 +22,7 @@ export function getParam(param) {
   return product;
 }
 
+
 // function to take a list of objects and a template and insert the objects as HTML into the DOM
 
 export function renderListWithTemplate(
@@ -39,6 +40,7 @@ export function renderListWithTemplate(
   parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
 }
 
+
 // set a listener for both touchend and click
 export function setClick(selector, callback) {
   qs(selector).addEventListener("touchend", (event) => {
@@ -46,4 +48,9 @@ export function setClick(selector, callback) {
     callback();
   });
   qs(selector).addEventListener("click", callback);
+
 }
+
+
+
+
